@@ -1,5 +1,5 @@
 <head>
-  <title>Microscope</title>  
+  <title>Microscope</title>
 </head>
 <body>
   <div class='container'>
@@ -8,9 +8,23 @@
         <a class='navbar-brand' href='/'>Microscope</a>
       </div>
     </header>
-    
-    <div id='main'>
-      {{> postsList}}
+
+    <div class='row'>
+      <!-- Primary content -->
+      <section id='main' class='col-md-8'>
+        {{> postsList}}
+      </section>
+
+      <aside id='sidebar' class='col-md-4'>
+        <svg>
+          <rect fill='lightblue' width='100%' height='100%'/>
+          <circle fill='gold' stroke='orange' cx='4em' cy='50%' r='2.7em'/>
+
+          <text x='90%' y='50%'>
+            {{type==='C' ? celsius : Math.round((celsius*1.8)+32) }}°
+          </text>
+        </svg>
+      </aside>
     </div>
   </div>
 </body>
