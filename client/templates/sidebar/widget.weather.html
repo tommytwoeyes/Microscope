@@ -1,11 +1,14 @@
 <template name='weatherWidget'>
-  <svg xmlns='http://www.w3.org/2000/svg' class='weather widget'>
-    <g id='weather-widget-shapes'>
-      <rect class='background' height='100%' rx='3' ry='3'/>
-      <circle class='sun' cx='4em' cy='50%' r='2.7em'/>
-      <text x='55%' y='60%'>
-        73&deg;
-      </text>
-    </g>
-  </svg>
+  <div class='weather widget'>
+    <svg xmlns='http://www.w3.org/2000/svg'>
+      <g id='weather-widget-shapes'>
+<!--         <rect class='background' width='88%' height='100%' rx='4' ry='4'/> -->
+        <circle class='sun' cx='4.2em' cy='50%' r='3.3em'/>
+        <text class='location' x='44%' y='33%'>LOS ANGELES</text>
+        <text class='temperature' x='44%' y='74%'>
+          73&deg;
+        </text>
+      </g>
+    </svg>    
+  </div>
 </template>
