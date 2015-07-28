@@ -1,11 +1,20 @@
 .grid-block, .main, .post, .comments li, .comment-form {
   background: #fff;
-  border-radius: 3px;
+  border-radius: 4px;
   padding: 10px;
   margin-bottom: 10px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
+
+.widget.weather {
+  background: #ACD8E7;
+  border-radius: 4px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 1px rgba(1, 38, 50, 0.35); }
 
 body {
   background: #eee;
@@ -22,6 +31,28 @@ body {
 
 .navbar {
   margin-bottom: 10px; }
+
+
+
+.microscope .navbar-default .navbar-brand {
+  font-family: 'Roboto Condensed', Roboto, Helvetica, sans-serif;
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 1.2rem auto 0 auto;
+  color: #2F2F2F;
+}
+
+.microscope .navbar-default i.tagline {
+  font-size: 0.8rem;
+  font-weight: 100;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.99rem;
+  display: block;
+  margin: -0.02rem auto 1rem auto;
+  padding: 0 1.65rem;}
+
   /* line 32, ../sass/style.scss */
   .navbar .navbar-inner {
     border-radius: 0px 0px 3px 3px; }
@@ -157,20 +188,4 @@ body {
   clear: both;
   margin-bottom: 5px;
   pointer-events: auto;
-}
-
-.widget.weather text {
-  font-size: 5rem;
-  fill: white;
-}
-
-.widget.weather .sun {
-  fill: gold;
-  stroke: orange;
-}
-
-.widget.weather .background {
-  fill: lightblue;
-  stroke: darkblue;
-  width: 88%;
 }
