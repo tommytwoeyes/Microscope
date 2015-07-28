@@ -168,3 +168,9 @@ body {
   fill: gold;
   stroke: orange;
 }
+
+.widget.weather .background {
+  fill: lightblue;
+  stroke: darkblue;
+  width: 88%;
+}
