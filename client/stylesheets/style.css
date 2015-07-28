@@ -158,3 +158,8 @@ body {
   margin-bottom: 5px;
   pointer-events: auto;
 }
+
+.widget.weather text {
+  font-size: 4rem;
+  color: white:
+}
