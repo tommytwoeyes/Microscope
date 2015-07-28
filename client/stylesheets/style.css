@@ -159,9 +159,9 @@ body {
   pointer-events: auto;
 }
 
-.widget.weather > text {
+.widget.weather text {
   font-size: 5rem;
-  color: white;
+  fill: white;
 }
 
 .widget.weather .sun {
