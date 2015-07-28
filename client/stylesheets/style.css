@@ -34,7 +34,7 @@ body {
 
 
 
-.microscope .navbar-default .navbar-brand {
+.container.root .navbar-default .navbar-brand {
   font-family: 'Roboto Condensed', Roboto, Helvetica, sans-serif;
   font-size: 4rem;
   font-weight: 900;
@@ -43,7 +43,7 @@ body {
   color: #2F2F2F;
 }
 
-.microscope .navbar-default i.tagline {
+.container.root .navbar-default i.tagline {
   font-size: 0.8rem;
   font-weight: 100;
   font-style: normal;
