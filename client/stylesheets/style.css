@@ -38,19 +38,22 @@ body {
   font-family: 'Roboto Condensed', Roboto, Helvetica, sans-serif;
   font-size: 4rem;
   font-weight: 900;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
   margin: 1.2rem auto 0 auto;
   color: #2F2F2F;
+  height: 45px;
 }
 
 .container.root .navbar-default i.tagline {
-  font-size: 0.8rem;
+  color: #999;
+  font-size: 1rem;
   font-weight: 100;
   font-style: normal;
   text-transform: uppercase;
-  letter-spacing: 0.99rem;
+  letter-spacing: 1.0rem;
   display: block;
-  margin: -0.02rem auto 1rem auto;
+  margin: -0.1rem auto 1rem auto;
   padding: 0 1.65rem;}
 
   /* line 32, ../sass/style.scss */
