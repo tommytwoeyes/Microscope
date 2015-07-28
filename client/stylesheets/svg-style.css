@@ -1,0 +1,15 @@
+.widget.weather text {
+  font-size: 5rem;
+  fill: white;
+}
+
+.widget.weather .sun {
+  fill: gold;
+  stroke: orange;
+}
+
+.widget.weather .background {
+  fill: lightblue;
+  stroke: darkblue;
+  width: 88%;
+}
