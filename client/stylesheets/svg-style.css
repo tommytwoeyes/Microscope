@@ -1,15 +1,20 @@
-.widget.weather text {
-  font-size: 5rem;
+.widget.weather text.temperature {
+  font-size: 6.2rem;
+  fill: white;}
+
+.widget.weather text.location {
+  fill: #82C4DA;
+  font-size: 0.8m;}
+
+.widget.weather text.zip {
   fill: white;
-}
+  font-size: 1.5em;}
 
 .widget.weather .sun {
   fill: gold;
-  stroke: orange;
-}
+  stroke: orange;}
 
 .widget.weather .background {
   fill: lightblue;
   stroke: darkblue;
-  width: 88%;
-}
+  stroke-width: 1;}
