@@ -159,7 +159,12 @@ body {
   pointer-events: auto;
 }
 
-.widget.weather text {
+.widget.weather > text {
   font-size: 5rem;
   color: white;
+}
+
+.widget.weather .sun {
+  fill: gold;
+  stroke: orange;
 }
