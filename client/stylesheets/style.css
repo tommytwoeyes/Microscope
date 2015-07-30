@@ -2,7 +2,7 @@
   background: #fff;
   border-radius: 4px;
   padding: 10px;
-  margin-bottom: 1.5rem;
+  margin-top: 2rem;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
@@ -21,7 +21,7 @@ body {
   color: #666666; }
 
 #main {
-  position: relative;
+/*   position: relative; */
 }
 .page {
   position: absolute;
@@ -29,12 +29,12 @@ body {
   width: 100%;
 }
 
-.navbar {
-  margin-bottom: 10px; }
+/* .navbar {
+  margin-bottom: 10px; } */
 
 
 
-.container.root .navbar-default .navbar-brand {
+.navbar-default .container.root .navbar-brand {
   font-family: 'Roboto Condensed', Roboto, Helvetica, sans-serif;
   font-size: 4rem;
   font-weight: 900;
@@ -45,7 +45,7 @@ body {
   height: 45px;
 }
 
-.container.root .navbar-default i.tagline {
+.navbar-default .container.root i.tagline {
   color: #999;
   font-size: 1rem;
   font-weight: 100;
@@ -57,8 +57,8 @@ body {
   padding: 0 1.65rem;}
 
   /* line 32, ../sass/style.scss */
-  .navbar .navbar-inner {
-    border-radius: 0px 0px 3px 3px; }
+/*   .navbar .navbar-inner {
+    border-radius: 0px 0px 3px 3px; } */
 
 #spinner {
   height: 300px; }
@@ -193,3 +193,6 @@ body {
   margin-bottom: 5px;
   pointer-events: auto;
 }
+
+.lead {
+  padding-top: 2rem; }
