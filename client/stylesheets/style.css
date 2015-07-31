@@ -38,7 +38,12 @@ a:hover {
 /* .navbar {
   margin-bottom: 10px; } */
 
-
+.navbar-default .container.root .navbar-header {
+  padding-left: 128px;
+  background-image: url(/img/microscope_64px.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
 
 .navbar-default .container.root .navbar-brand {
   font-family: 'Source Serif Pro', Helvetica, sans-serif;
