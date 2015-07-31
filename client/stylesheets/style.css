@@ -41,27 +41,34 @@ a:hover {
 
 
 .navbar-default .container.root .navbar-brand {
-  font-family: 'Roboto Condensed', Roboto, Helvetica, sans-serif;
-  font-size: 2.7rem;
-  font-weight: 900;
+  font-family: 'Source Serif Pro', Helvetica, sans-serif;
+  font-size: 2.6rem;
+  font-weight: 100;
+  line-height: 0;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-  margin: 0.5rem 0;
-  padding: 1.2rem 0 0 0;
+  margin: 0;
+  padding: 3rem 0 1rem 0;
   color: #2F2F2F;
   height: 45px;
+  display: block;
 }
 
 .navbar-default .container.root i.tagline {
   color: #999;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 100;
   font-style: normal;
   text-transform: uppercase;
-  letter-spacing: 0.72rem;
+  letter-spacing: 0.818rem;
   display: block;
-  margin: 0 0 1rem 0.1rem;
-  padding: 0;}
+  margin: 0 0 1rem 0.2rem;
+  padding: 0 0 1rem 0;
+}
+
+.navbar-right {
+  padding-top: 1rem; 
+}
 
   /* line 32, ../sass/style.scss */
 /*   .navbar .navbar-inner {
