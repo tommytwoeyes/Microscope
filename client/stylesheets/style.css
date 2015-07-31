@@ -7,26 +7,32 @@
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
 
-.widget.weather {
-  background: #ACD8E7;
-  border-radius: 4px;
-  padding: 0 10px;
-  margin-bottom: 10px;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 1px 1px rgba(1, 38, 50, 0.35); }
+html {
+  font-size: 100% !important; }
 
 body {
   background: #eee;
   color: #666666; }
 
+a:hover {
+  text-decoration: none; }
+
 #main {
 /*   position: relative; */
 }
+
 .page {
   position: absolute;
   top: 0px;
   width: 100%;
+}
+
+.page-header > h1 > small {
+  color: #999;
+  font-weight: 200;
+  font-size: 0.75rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
 }
 
 /* .navbar {
@@ -36,25 +42,25 @@ body {
 
 .navbar-default .container.root .navbar-brand {
   font-family: 'Roboto Condensed', Roboto, Helvetica, sans-serif;
-  font-size: 4rem;
+  font-size: 2.7rem;
   font-weight: 900;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
-  margin: 1.2rem auto 0 0;
-  padding: 1.5rem 0;
+  margin: 0.5rem 0;
+  padding: 1.2rem 0 0 0;
   color: #2F2F2F;
   height: 45px;
 }
 
 .navbar-default .container.root i.tagline {
   color: #999;
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-weight: 100;
   font-style: normal;
   text-transform: uppercase;
-  letter-spacing: 1.0rem;
+  letter-spacing: 0.72rem;
   display: block;
-  margin: -0.1rem auto 1rem auto;
+  margin: 0 0 1rem 0.1rem;
   padding: 0;}
 
   /* line 32, ../sass/style.scss */
@@ -97,15 +103,15 @@ body {
     .post .post-content h3 {
       margin: 0;
       line-height: 1.4;
-      font-size: 18px; }
+      font-size: 1.75rem; }
       .post .post-content h3 a {
         display: inline-block;
         margin-right: 5px; }
       .post .post-content h3 span {
         font-weight: normal;
-        font-size: 14px;
+        font-size: 1rem;
         display: inline-block;
-        color: #aaaaaa; }
+        color: #ccc; }
     .post .post-content p {
       margin: 0; }
   .post .discuss {
@@ -198,3 +204,12 @@ body {
 .lead {
   font-size: 2.7rem;
   padding-top: 2rem; }
+
+.widget.weather {
+  background: #ACD8E7;
+  border-radius: 4px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 1px rgba(1, 38, 50, 0.35); }
