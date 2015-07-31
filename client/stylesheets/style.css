@@ -39,10 +39,11 @@ a:hover {
   margin-bottom: 10px; } */
 
 .navbar-default .container.root .navbar-header {
-  padding-left: 128px;
-  background-image: url(/img/microscope_64px.png);
+  padding-left: 84px;
+  padding-top: 0.75rem;
+  background-image: url(/img/microscope.svg);
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: left center;
 }
 
 .navbar-default .container.root .navbar-brand {
@@ -53,7 +54,7 @@ a:hover {
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   margin: 0;
-  padding: 3rem 0 1rem 0;
+  padding: 2.75rem 0 1rem 0;
   color: #2F2F2F;
   height: 45px;
   display: block;
