@@ -19,13 +19,27 @@
 
   <div class='container content-container'>
     <div class='row'>
+      <!-- Columns are nested here, so that the subtle border-bottom style will span the width of the entire page -->
+      <div class='page-header col-md-12'>
+        <div class="page-title col-md-8">
+          <h1>{{pageTitle}}</h1>
+        </div>
+
+        <div class='nav-breadcrumb col-md-4'>
+          <small class='pull-right muted'>Today's Date</small>
+          <!-- Stub: need to add breadcrumb nav -->
+        </div>
+      </div>
+    </div>
+    
+    <div class='row'>
       <!-- Primary content -->
       <section class='main col-md-8 clearfix'>
         {{> yield}}
       </section>
 
       <aside class='sidebar col-md-3 col-md-offset-1 clearfix'>
-        {{> formLogin}}
+        {{> authForm}}
       </aside>
     </div>
   </div>
