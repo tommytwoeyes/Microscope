@@ -9,9 +9,8 @@
 html {
   font-size: 100% !important; }
 
-body {
-  background: #eee;
-  color: #666666; }
+html > body {
+  background: #fcfcfc; }
 
 .main, .sidebar {
   padding-top: 3rem;
@@ -21,7 +20,7 @@ body {
   color: #F0AD4E;
 }
 .post a.btn {
-  border: 1px solid #F7DEBA ;
+  border: 1px solid #F7DEBA;
   background: none; 
 }
 .post a.btn:hover {
@@ -32,15 +31,15 @@ body {
   color: #FFF;
 }
 
-.container.root a {
+.container a {
   color: #E0E4CC; 
 }
-.container.root a:hover {
+.container a:hover {
   color: #69D2E7; 
 }
 
-#main {
-/*   position: relative; */
+.main {
+  position: relative;
 }
 
 .page {
@@ -68,7 +67,17 @@ body {
 /* .navbar {
   margin-bottom: 10px; } */
 
-.navbar-default .container.root .navbar-header {
+html > body > .navbar-default {
+  background: #FFF;
+}
+
+.navbar-default .container.navigation-container a {
+  font-size: 0.75rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.navbar-default .container.navigation-container .navbar-header {
   padding-left: 84px;
   padding-top: 0.75rem;
   background-image: url(/img/microscope.svg);
@@ -76,7 +85,7 @@ body {
   background-position: left center;
 }
 
-.navbar-default .container.root .navbar-brand {
+.navbar-default .container.navigation-container .navbar-brand {
   font-family: 'Source Serif Pro', Helvetica, sans-serif;
   font-size: 2.6rem;
   font-weight: 100;
@@ -90,7 +99,7 @@ body {
   display: block;
 }
 
-.navbar-default .container.root i.tagline {
+.navbar-default .container.navigation-container i.tagline {
   color: #999;
   font-size: 0.8rem;
   font-weight: 100;
@@ -262,3 +271,19 @@ body {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   box-shadow: 0 1px 1px rgba(1, 38, 50, 0.35); }
+
+/** Form Elements **/
+.container.content-container .widget > legend {
+  border-bottom: 1px solid #F7DEBA;
+}
+
+.form-group.login.submit .btn {
+  border: 1px solid #F7DEBA;
+  background: #FFF; 
+  color: #F0AD4E;
+}
+.form-group.login.submit .btn:hover {
+  border: 1px solid #F0AD4E;
+  background: #F0AD4E;
+  color: #FFF;
+}
