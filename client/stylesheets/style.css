@@ -14,7 +14,23 @@ body {
   background: #eee;
   color: #666666; }
 
-a:hover {
+
+.post a.btn > span.glyphicon {
+  color: #F0AD4E;
+}
+.post a.btn {
+  border: 1px solid #F0AD4E;
+  background: none; 
+}
+.post a.btn:hover {
+  background: #F0AD4E;
+}
+.post a.btn:hover > span.glyphicon {
+  color: #FFF;
+}
+
+.container.root a:hover {
+  color: #AC6A0C;
   text-decoration: none; }
 
 #main {
