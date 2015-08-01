@@ -19,19 +19,23 @@ body {
   color: #F0AD4E;
 }
 .post a.btn {
-  border: 1px solid #F0AD4E;
+  border: 1px solid #F7DEBA ;
   background: none; 
 }
 .post a.btn:hover {
+  border: 1px solid #F0AD4E;
   background: #F0AD4E;
 }
 .post a.btn:hover > span.glyphicon {
   color: #FFF;
 }
 
+.container.root a {
+  color: #E0E4CC; 
+}
 .container.root a:hover {
-  color: #AC6A0C;
-  text-decoration: none; }
+  color: #69D2E7; 
+}
 
 #main {
 /*   position: relative; */
@@ -134,8 +138,13 @@ body {
       line-height: 1.4;
       font-size: 1.75rem; }
       .post .post-content h3 a {
+        color: #0AD0F7;
         display: inline-block;
         margin-right: 5px; }
+      .post .post-content h3:hover a {
+        color: #82E6FA;
+        text-decoration: none;
+      }
       .post .post-content h3 span {
         font-weight: normal;
         font-size: 1rem;
