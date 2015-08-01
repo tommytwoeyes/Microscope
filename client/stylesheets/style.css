@@ -1,8 +1,7 @@
-.grid-block, .main, .post, .comments li, .comment-form {
+.grid-block, .post, .comments li, .comment-form {
   background: #fff;
   border-radius: 4px;
   padding: 10px;
-  margin-top: 2rem;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
@@ -14,6 +13,9 @@ body {
   background: #eee;
   color: #666666; }
 
+.main, .sidebar {
+  padding-top: 3rem;
+}
 
 .post a.btn > span.glyphicon {
   color: #F0AD4E;
@@ -45,6 +47,14 @@ body {
   position: absolute;
   top: 0px;
   width: 100%;
+}
+
+.main .page-header {
+  margin-top: 0;
+}
+
+.main > .page-header > h1 {
+  margin-top: 0;
 }
 
 .page-header > h1 > small {
@@ -105,7 +115,8 @@ body {
 
 .post {
   /* For modern browsers */
-
+  margin-bottom: 2rem;
+  
   /* For IE 6/7 (trigger hasLayout) */
   *zoom: 1;
   position: relative;

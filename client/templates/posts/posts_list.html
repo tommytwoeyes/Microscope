@@ -1,7 +1,8 @@
 <template name='postsList'>
-  <div class='posts page'>
-    {{#each posts}}
-      {{> postItem}}
-    {{/each}}
-  </div>
+<!-- Comment out this wrapper: it is interfering with its container's .clearfix -->
+<!--   <div class='posts page'> -->
+  {{#each posts}}
+    {{> postItem}}
+  {{/each}}
+<!--   </div> --> 
 </template>
