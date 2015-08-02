@@ -17,15 +17,19 @@ html > body {
 }
 
 .post a.btn > span.glyphicon {
-  color: #F0AD4E;
+  color: #F38630;
+/*   color: #F0AD4E; */
 }
 .post a.btn {
-  border: 1px solid #F7DEBA;
+  border: 1px solid #FAC8A0;
+/*   border: 1px solid #F7DEBA; */
   background: none; 
 }
 .post a.btn:hover {
-  border: 1px solid #F0AD4E;
-  background: #F0AD4E;
+  border: 1px solid #F38630;
+  background: #F38630;
+/*   border: 1px solid #F0AD4E; */
+/*   background: #F0AD4E; */
 }
 .post a.btn:hover > span.glyphicon {
   color: #FFF;
