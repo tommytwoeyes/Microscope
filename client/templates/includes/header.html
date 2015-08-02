@@ -18,9 +18,7 @@
       <div class='collapse navbar-collapse' id='navHeader'>
         <ul class='nav navbar-nav nav-pills navbar-right'>
           {{> loginButtons align="right"}}
-        {{#if Meteor.userId() }}
           <li><a href="{{pathFor 'postSubmit'}}">New post</a></li>
-        {{/if}}
           <li><a href="{{pathFor 'postsList'}}">Home</a></li>
           <li><a href="{{pathFor 'about'}}">About</a></li>
         </ul>
