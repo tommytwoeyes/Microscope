@@ -10,7 +10,7 @@
 
       <aside class='sidebar col-md-3 col-md-offset-1 clearfix'>
         <h3>Sidebar Title</h3>
-      {{#if Meteor.user}}
+      {{#if Meteor.userId()}}
         <a href="{{pathFor 'postSubmit'}}" class='btn btn-info btn-lg btn-block'>New Post</a>
       {{/if}}
       </aside>
