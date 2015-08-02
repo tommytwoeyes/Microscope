@@ -6,7 +6,8 @@
     <defs></defs>
     <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
         <g id="Microscope-64px" sketch:type="MSLayerGroup">
-            <circle id="Background" fill="#F0AD4E" sketch:type="MSShapeGroup" cx="32" cy="32" r="32"></circle>
+            <circle id="Background" fill="#F38630" sketch:type="MSShapeGroup" cx="32" cy="32" r="32"></circle>
+            <!-- <circle id="Background" fill="#F0AD4E" sketch:type="MSShapeGroup" cx="32" cy="32" r="32"></circle> -->
             <path d="M37.5653193,39.4042095 C42.1970507,37.9112103 45.5479448,33.565511 45.5479448,28.4371684 C45.5479448,22.074604 40.3900672,16.9167264 34.0275028,16.9167264 C33.1856428,16.9167264 32.3648734,17.0070262 31.574352,17.1784682 L31.574352,17.1784682 L31.574352,21.1749768 C32.3473311,20.9125253 33.1757857,20.7701845 34.0374858,20.7701845 C38.2663306,20.7701845 41.6944867,24.1983406 41.6944867,28.4271854 C41.6944867,32.3186781 38.79147,35.5321349 35.0329217,36.0200708 L37.5653193,39.4042095 Z" id="Neck" fill="#EFEDED" sketch:type="MSShapeGroup"></path>
             <g id="Base" transform="translate(16.174625, 33.222374)" sketch:type="MSShapeGroup">
                 <rect id="Path-Copy" fill="#EBE8E8" x="0" y="12.2673943" width="31.6289222" height="4.06002729" rx="0.654843111"></rect>
