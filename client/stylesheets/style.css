@@ -31,9 +31,6 @@ html > body {
   color: #FFF;
 }
 
-.container a {
-  color: #E0E4CC; 
-}
 .container a:hover {
   color: #69D2E7; 
 }
