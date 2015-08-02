@@ -291,3 +291,9 @@ html > body > .navbar-default {
 
 /** Utility Classes **/
 .muted { color: #999; }
+
+.flash {
+  padding: 2rem;
+  border-radius: 0.3rem;
+  border: 1px solid #F5DBAE;
+}
