@@ -1,5 +1,5 @@
 Template.postSubmit.events({
-  'submit newPostForm': function(e) {
+  'submit form': function(e) {
     // Prevent form from being submitted over HTTP
     e.preventDefault();
     
