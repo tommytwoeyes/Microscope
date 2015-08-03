@@ -18,7 +18,7 @@
       <div class='collapse navbar-collapse' id='navHeader'>
         <ul class='nav navbar-nav nav-pills navbar-right'>
           {{> loginButtons align="right"}}
-          <li><a href="{{pathFor 'postSubmit'}}">New post</a></li>
+          {{#if currentUser}}<li><a href="{{pathFor 'postSubmit'}}">New post</a></li>{{/if}}
           <li><a href="{{pathFor 'postsList'}}">Home</a></li>
           <li><a href="{{pathFor 'about'}}">About</a></li>
         </ul>
