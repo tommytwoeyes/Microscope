@@ -13,6 +13,14 @@ Template.postSubmit.events({
       post.url = 'http://' + post.url;
     }  
     
+    Meteor.call('postInsert', post, function(error, result){
+      // Display the error to the user and abort
+      if (error)
+        return alert(error.reason);
+      
+      Router.go('postPage', {_id: result._id});
+    });
+    
     post._id = Posts.insert(post);
     Router.go('postPage', post);
   }
