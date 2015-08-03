@@ -13,21 +13,18 @@ Template.postSubmit.events({
       post.url = 'http://' + post.url;
     }  
     
-    Meteor.call('postInsert', post, function(error, result){
+    Meteor.call('postInsert', post, function(error, result) {
       // Display the error to the user and abort
       if (error)
         return alert(error.reason);
-      
+        
       // If a Post with the submitted URL already exists, route the user
       // to the previous post instead
       if (result.postExists)
-        alert('This link has already been posted.');
+        alert('This link has already been posted');
       
-      Router.go('postPage', {_id: result._id});
+      Router.go('postPage', {_id: result._id});  
     });
-    
-    post._id = Posts.insert(post);
-    Router.go('postPage', post);
   }
 });
 
