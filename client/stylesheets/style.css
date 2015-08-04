@@ -295,7 +295,7 @@ html > body > .navbar-default {
 
 
 /** Utility Classes **/
-.muted { color: #999; }
+.muted { color: #ccc; }
 
 .flash {
   padding: 2rem;
