@@ -18,6 +18,23 @@ html > body {
   padding-top: 3rem;
 }
 
+footer {
+  margin-top: 3rem;
+  padding: 3rem 0;
+  background: #f7f7f7;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer-nav {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.footer-container .copyright {
+  text-align: center;
+}
+
 .post a.btn > span.glyphicon {
   color: rgba(0, 0, 0, 0.15);
 /*   color: #F0AD4E; */

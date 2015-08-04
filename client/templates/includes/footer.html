@@ -1,0 +1,22 @@
+<template name='footer'>
+  <footer>
+    <section class='container footer-container'>
+      <div class='row'>
+        <nav class='footer-nav'>
+          <ul class='nav nav-pills nav-justified'>
+            <li><a href='{{pathFor "postsList"}}'>Home</a></li>
+            <li><a href='{{pathFor "about"}}'>About</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class='row'>
+        <div class='col-md-12'>
+          <p class='copyright muted'>
+            <small>Copyright &copy; {{currentYear}} The Bionic Man. All rights reserved.</small>
+          </p>
+        </div>
+      </div>
+    </section>
+  </footer>
+</template>
