@@ -1,4 +1,4 @@
-Template.postEdit.helpers({
+Template.postEdit.events({
   'submit form': function(e) {
     // Prevent form from being submitted the default way, through HTTP
     e.preventDefault();
@@ -27,7 +27,7 @@ Template.postEdit.helpers({
 
     if ( confirm("Do you really want to delete this post?") ) {
       var currentPostId = this._id;
-      Posts.remove({_id: currentPostId});
+      Posts.remove(currentPostId);
       Router.go('postsList');
     }
   }

@@ -18,6 +18,25 @@ html > body {
   padding-top: 3rem;
 }
 
+.sidebar .widget {
+  margin: 0 0 3rem 0;
+}
+
+.sidebar .widget > header {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.sidebar .widget > .widget-body {
+  font-size: 0.8rem;
+}
+
+.sidebar .widget > .widget-body dl > dt {
+  width: 80px;
+}
+.sidebar .widget > .widget-body dl > dd {
+  margin-left: 100px;
+}
 footer {
   margin-top: 3rem;
   padding: 3rem 0;

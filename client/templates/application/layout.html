@@ -9,9 +9,13 @@
       </section>
 
       <aside class='sidebar col-md-3 col-md-offset-1'>
-        <h3>Sidebar Title</h3>
+      {{#if currentUser}}
+        {{> userMeta}}
+      {{/if}}
         
-        {{#if currentUser}}<a href="{{pathFor 'postCreate'}}" class='btn btn-info btn-lg btn-block'>New Post</a>{{/if}}
+      {{#if currentUser}}
+        {{> postButton}}
+      {{/if}}
       </aside>
     </div>
   </section>
