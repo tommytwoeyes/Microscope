@@ -1,0 +1,33 @@
+<template name='postEdit'>
+  <form class='main form page form-horizontal'>
+    <fieldset>
+      <legend>Editing Post</legend>
+      
+      <!-- Form input : TITLE -->
+      <div class='form-group'>
+        <label for='title' class='control-label col-md-2'>Title</label>
+        <div class='col-md-10'>
+          <input name='title' id='title' type='text' value='{{title}}' placeholder='Name your post' class='form-control' required/>
+        </div>
+      </div>
+      
+      <!-- Form input : URL -->
+      <div class='form-group'>
+        <label for='url' class='control-label col-md-2'>URL</label>
+        <div class='col-md-10'>
+          <input name='url' id='url' type='url' value='{{url}}' placeholder='URL to link to' class='form-control' required/>
+        </div>
+      </div>
+      
+      <!-- Form control : BUTTONS -->
+      <div class='form-group'>
+        <div class='col-md-12'>
+          <button type='submit' class='btn btn-info pull-right'>Save Post</button>
+          <a href='#' class='delete btn btn-danger btn-sm'>
+            <span class='glyphicon glyphicon-remove' aria-hidden='true'></span>
+          </a>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+</template>
