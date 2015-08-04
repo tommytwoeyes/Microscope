@@ -1,7 +1,7 @@
 <template name='layout'>
   {{> header}}
 
-  <div class='container content-container'>
+  <section class='container content-container'>
     <div class='row'>
       <!-- Primary content -->
       <section class='main col-md-8 clearfix'>
@@ -13,5 +13,5 @@
         {{#if currentUser}}<a href="{{pathFor 'postSubmit'}}" class='btn btn-info btn-lg btn-block'>New Post</a>{{/if}}
       </aside>
     </div>
-  </div>
+  </section>
 </template>
