@@ -19,22 +19,22 @@ html > body {
 }
 
 .post a.btn > span.glyphicon {
-  color: #F38630;
+  color: rgba(0, 0, 0, 0.15);
 /*   color: #F0AD4E; */
 }
 .post a.btn {
-  border: 1px solid #FAC8A0;
+  border: 1px solid #FFF;
+/*   border: 1px solid #FAC8A0; */
 /*   border: 1px solid #F7DEBA; */
   background: none; 
 }
 .post a.btn:hover {
-  border: 1px solid #F38630;
-  background: #F38630;
+  border: 1px solid rgba(240, 173, 78, 1.0);
 /*   border: 1px solid #F0AD4E; */
 /*   background: #F0AD4E; */
 }
 .post a.btn:hover > span.glyphicon {
-  color: #FFF;
+  color: #F38630;
 }
 
 .container a:hover {
@@ -175,9 +175,11 @@ html > body > .navbar-default {
         color: #ccc; }
     .post .post-content p {
       margin: 0; }
-  .post .discuss {
+  .post .post-actions {
+    float: right; }
+  .post .post-actions > .discuss,
+  .post .post-actions > .edit {
     display: block;
-    float: right;
     margin-top: 7px; }
 
 .comments {
