@@ -9,6 +9,20 @@ Template.postEdit.events({
       title:    $(e.target).find('[name=title]').val(),
       url:      $(e.target).find('[name=url]').val()
     };
+    
+    // Ensure URL has protocol (i.e. http:// or https://)
+    if ( ! urlHasProtocol(postAttributes.url)) {
+      postAttributes.url = 'http://' + postAttributes.url;
+    }
+    
+    Meteor.call('findDuplicateUrl', postAttributes.url, function(error, result) {
+      // If a Post with the submitted URL already exists, route the user
+      // to the previous post instead
+      if (result.postExists)
+        alert('This link has already been posted');
+
+      Router.go('postPage', {_id: result._id});  
+    });
 
     Posts.update(currentPostId, {$set: postAttributes}, function(error) {
       if (error) {

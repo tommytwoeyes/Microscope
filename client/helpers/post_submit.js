@@ -27,8 +27,3 @@ Template.postCreate.events({
     });
   }
 });
-
-function urlHasProtocol(url) {
-  var re = /^https?:\/\//i;
-  return re.test(url);
-}
