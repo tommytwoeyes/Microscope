@@ -54,6 +54,19 @@ footer {
   text-align: center;
 }
 
+.btn.btn-info {
+  color: #C2EDFB;
+}
+.btn.btn-info:hover {
+  color: #fff;
+}
+.btn.btn-danger {
+  color: #FFBDBB;
+}
+.btn.btn-danger:hover {
+  color: #fff;
+}
+
 .post a.btn > span.glyphicon {
   color: rgba(0, 0, 0, 0.15);
 /*   color: #F0AD4E; */
