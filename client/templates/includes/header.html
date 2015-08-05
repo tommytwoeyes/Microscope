@@ -16,7 +16,7 @@
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class='collapse navbar-collapse' id='navHeader'>
-        <ul class='nav navbar-nav nav-pills navbar-right'>
+        <ul class='nav navbar-nav navbar-right'>
           {{> loginButtons align="right"}}
           {{#if currentUser}}<li><a href="{{pathFor 'postCreate'}}">New post</a></li>{{/if}}
           <li><a href="{{pathFor 'postsList'}}">Home</a></li>

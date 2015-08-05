@@ -3,12 +3,8 @@
 
   <section class='container content-container'>
     <div class='row'>
-      <!-- Primary content -->
-      <section class='main col-md-8 clearfix'>
-        {{> yield}}
-      </section>
-
-      <aside class='sidebar col-md-3 col-md-offset-1'>
+      <!-- Sidebar content -->
+      <aside class='sidebar col-xs-12 col-md-3 col-md-push-8 col-md-offset-1'>
       {{#if currentUser}}
         {{> userMeta}}
       {{/if}}
@@ -17,6 +13,11 @@
         {{> postButton}}
       {{/if}}
       </aside>
+      
+      <!-- Primary content -->
+      <section class='main col-xs-12 col-md-8 col-md-pull-4 clearfix'>
+        {{> yield}}
+      </section>
     </div>
   </section>
   
