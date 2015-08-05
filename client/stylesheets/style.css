@@ -281,6 +281,8 @@ html > body > .navbar-default {
 @-webkit-keyframes fadeOut {
   0% {opacity: 0;}
   10% {opacity: 1;}
+/*   90% {opacity: 1;} */
+/*   100% {opacity: 0;} */
   90% {opacity: 1;}
   100% {opacity: 0;}
 }
@@ -293,22 +295,24 @@ html > body > .navbar-default {
 }
 
 .errors{
-  position: fixed;
-  z-index: 10000;
+/*   position: fixed; */
+/*   z-index: 10000; */
   padding: 10px;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
+/*   top: 0px; */
+/*   left: 0px; */
+/*   right: 0px; */
+/*   bottom: 0px; */
   pointer-events: none;
 }
 .alert {
-          animation: fadeOut 2700ms ease-in 0s 1 forwards;
-  -webkit-animation: fadeOut 2700ms ease-in 0s 1 forwards;
-     -moz-animation: fadeOut 2700ms ease-in 0s 1 forwards;
-  width: 250px;
-  float: right;
-  clear: both;
+          animation: fadeOut 7500ms ease-in 0s 1 forwards;
+  -webkit-animation: fadeOut 7500ms ease-in 0s 1 forwards;
+     -moz-animation: fadeOut 7500ms ease-in 0s 1 forwards;
+/*   animation-fill-mode: forwards; */
+/*   -webkit-animation-fill-mode: forwards; */
+  width: auto;
+/*   float: right; */
+/*   clear: both; */
   margin-bottom: 5px;
   pointer-events: auto;
 }
