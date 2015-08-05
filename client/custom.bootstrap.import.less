@@ -37,7 +37,7 @@
 //** Background color for `<body>`.
 @body-bg:               #fff;
 //** Global text color on `<body>`.
-@text-color:            @gray-dark;
+@text-color:            @gray-light;
 
 //** Global textual link color.
 @link-color:            @brand-primary;
@@ -105,7 +105,11 @@
 @headings-font-family:    'Source Serif Pro';
 @headings-font-weight:    100;
 @headings-line-height:    1.1;
-@headings-color:          inherit;
+@headings-color:          @gray-dark;
+
+.lead {
+  color: @gray-dark;
+}
 
 
 //== Iconography
