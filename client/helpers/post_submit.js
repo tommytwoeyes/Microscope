@@ -1,4 +1,4 @@
-Template.postCreate.events({
+Template.postCreate.events({  
   'submit form': function(e) {
     // Prevent form from being submitted over HTTP
     e.preventDefault();
