@@ -9,9 +9,11 @@ Template.postCreate.events({
     };
     
     // Ensure URL begins with HTTP or Secure HTTP protocol
+    /*
     if ( ! urlHasProtocol(post.url)) {
       post.url = 'http://' + post.url;
     }  
+    */
     
     Meteor.call('postInsert', post, function(error, result) {
       // Display the error to the user and abort
