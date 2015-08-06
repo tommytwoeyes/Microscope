@@ -1,3 +1,23 @@
+// Initialize the errorMessages object every time the postCreate
+// template is rendered, so that the user will never see old error 
+// messages from a previous interaction with the form
+Template.postCreate.onCreated(function() {
+  Session.set('postSubmitErrors', {});
+});
+
+// These helpers generate the reactive error messages and
+// error message CSS classes that (reactively) get added to
+// and removed from the form as the user interacts with it
+Template.postCreate.helpers({
+  errorMessage: function (field) {
+    return Session.get('postSubmitErrors')[field];
+  },
+  
+  errorClass: function (field) {
+    return !!Session.get('postSubmitErrors')[field] ? 'has-error' : '';
+  }
+});
+
 Template.postCreate.events({  
   'submit form': function(e) {
     // Prevent form from being submitted over HTTP
@@ -7,6 +27,10 @@ Template.postCreate.events({
       title:    $(e.target).find('[name=title]').val(),
       url:      $(e.target).find('[name=url]').val()
     };
+    
+    var errors = validatePost(post);
+    if ( errors.title || errors.url ) 
+      return Session.set('postSubmitErrors', errors);
     
     // Ensure URL begins with HTTP or Secure HTTP protocol
     /*
