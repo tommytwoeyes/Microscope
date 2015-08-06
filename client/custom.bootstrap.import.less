@@ -37,7 +37,7 @@
 //** Background color for `<body>`.
 @body-bg:               #fff;
 //** Global text color on `<body>`.
-@text-color:            @gray-dark;
+@text-color:            @gray-light;
 
 //** Global textual link color.
 @link-color:            @brand-primary;
@@ -94,7 +94,8 @@
 */
 
 //** Unit-less `line-height` for use in components like buttons.
-@line-height-base:        1.428571429; // 20/14
+/* @line-height-base:        1.428571429; // 20/14 */
+@line-height-base:        1.6;
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 //** Convert Bootstrap 3 units from px values to rem values [ https://gist.github.com/jasny/9731895 ]
 @line-height-computed:    (@font-size-base * @line-height-base); 
@@ -104,8 +105,19 @@
 @headings-font-family:    'Source Serif Pro';
 @headings-font-weight:    100;
 @headings-line-height:    1.1;
-@headings-color:          inherit;
+@headings-color:          @gray-dark;
 
+.lead {
+  color: @gray-dark;
+}
+
+nav.navbar-default .navbar-nav > li > a {
+  color: @gray-dark;
+} 
+nav.navbar-default .navbar-nav > li:hover > a,
+nav.navbar-default .navbar-nav > li > a:hover {
+  color: #0AD0F7;
+}
 
 //== Iconography
 //

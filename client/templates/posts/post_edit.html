@@ -1,7 +1,11 @@
 <template name='postEdit'>
-  <form class='main form page form-horizontal'>
+  <div class='page-header'>
+    <h1>Edit Post</h1>
+  </div>
+  
+  <form class='main form form-horizontal' role='form'>
     <fieldset>
-      <legend>Editing Post</legend>
+      <legend>Details</legend>
       
       <!-- Form input : TITLE -->
       <div class='form-group'>
@@ -21,12 +25,16 @@
       
       <!-- Form control : BUTTONS -->
       <div class='form-group'>
-          <button type='submit' class='edit btn btn-info btn-sm'>
-            <span class='glyphicon glyphicon-ok' aria-hidden='true'></span>
-          </button>
-          <button type='button' class='delete btn btn-danger btn-sm'>
-            <span class='glyphicon glyphicon-remove' aria-hidden='true'></span>
-          </button>
+        <div class='col-md-12'>
+          <div class='form-buttons pull-right'>
+            <button type='submit' class='edit btn btn-info btn-sm'>
+              <span class='glyphicon glyphicon-ok-sign' title='Save' aria-hidden='true'></span>
+            </button>
+            <button type='button' class='delete btn btn-danger btn-sm'>
+              <span class='glyphicon glyphicon-exclamation-sign' title='Delete' aria-hidden='true'></span>
+            </button>
+          </div>
+        </div>
       </div>
     </fieldset>
   </form>

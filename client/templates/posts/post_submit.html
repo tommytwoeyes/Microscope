@@ -1,25 +1,34 @@
-<template name='postSubmit'>
-  <form class='main form page form-horizontal'>
+<template name='postCreate'>
+  <div class='page-header'>
+    <h1>New Post</h1>
+  </div>
+  <form class='main form form-horizontal' role='form'>
     <fieldset>
-      <legend>New Post</legend>
+      <legend>Details</legend>
       
-      <div class='form-group'>
+      <div class='form-group {{errorClass "title"}}'>
         <label class='control-label col-md-2' for='title'>Title</label>
         <div class='col-md-10'>
-          <input name='title' id='title' type='text' value='' placeholder='Name your post' class='form-control' required/>
+          <input name='title' id='title' type='text' value='' placeholder='Name your post' class='form-control' />
+          <span class='help-block'>{{errorMessage 'title'}}</span>
         </div>
       </div>
       
-      <div class='form-group'>
+      <div class='form-group {{errorClass "url"}}'>
         <label for='url' class='control-label col-md-2'>URL</label>
         <div class='col-md-10'>
-          <input name='url' id='url' type='url' value='' placeholder='URL to link to' class='form-control' required/>
+          <input name='url' id='url' type='url' value='' placeholder='URL to link to' class='form-control' />
+          <span class='help-block'>{{errorMessage 'url'}}</span>
         </div>
       </div>
       
       <div class='form-group'>
         <div class='col-md-12'>
-          <button type='submit' class='btn btn-info pull-right'>Save new post</button>
+          <div class='form-buttons pull-right'>
+            <button type='submit' class='edit btn btn-info btn-sm'>
+              <span class='glyphicon glyphicon-ok-sign' title='Save' aria-hidden='true'></span>
+            </button>
+          </div>
         </div>
       </div>
     </fieldset>

@@ -15,9 +15,28 @@ html > body {
   background: #fcfcfc; }
 
 .main, .sidebar {
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
+.sidebar .widget {
+  margin: 0 0 3rem 0;
+}
+
+.sidebar .widget > header {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.sidebar .widget > .widget-body {
+  font-size: 0.8rem;
+}
+
+.sidebar .widget > .widget-body dl > dt {
+  width: 80px;
+}
+.sidebar .widget > .widget-body dl > dd {
+  margin-left: 100px;
+}
 footer {
   margin-top: 3rem;
   padding: 3rem 0;
@@ -33,6 +52,19 @@ footer {
 
 .footer-container .copyright {
   text-align: center;
+}
+
+.btn.btn-info {
+  color: #C2EDFB;
+}
+.btn.btn-info:hover {
+  color: #fff;
+}
+.btn.btn-danger {
+  color: #FFBDBB;
+}
+.btn.btn-danger:hover {
+  color: #fff;
 }
 
 .post a.btn > span.glyphicon {
@@ -260,23 +292,25 @@ html > body > .navbar-default {
   100% {opacity: 0;}
 }
 
-.errors{
-  position: fixed;
-  z-index: 10000;
+.errors {
+/*   position: fixed; */
+/*   z-index: 10000; */
   padding: 10px;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
+/*   top: 0px; */
+/*   left: 0px; */
+/*   right: 0px; */
+/*   bottom: 0px; */
   pointer-events: none;
 }
+
 .alert {
-          animation: fadeOut 2700ms ease-in 0s 1 forwards;
-  -webkit-animation: fadeOut 2700ms ease-in 0s 1 forwards;
-     -moz-animation: fadeOut 2700ms ease-in 0s 1 forwards;
-  width: 250px;
-  float: right;
-  clear: both;
+  /** @todo: Disable the animation until I figure out how to make it fade out without continuing to consume space in the DOM **/
+          animation: fadeOut 5000ms ease-in 0s 1 forwards;
+  -webkit-animation: fadeOut 5000ms ease-in 0s 1 forwards;
+     -moz-animation: fadeOut 5000ms ease-in 0s 1 forwards;
+  width: auto;
+/*   float: right; */
+/*   clear: both; */
   margin-bottom: 5px;
   pointer-events: auto;
 }
