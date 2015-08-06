@@ -281,20 +281,18 @@ html > body > .navbar-default {
 @-webkit-keyframes fadeOut {
   0% {opacity: 0;}
   10% {opacity: 1;}
-/*   90% {opacity: 1;} */
-/*   100% {opacity: 0;} */
   90% {opacity: 1;}
-  100% {opacity: 0;}
+  100% {opacity: 0; transform: scale(0, 0); }
 }
 
 @keyframes fadeOut {
   0% {opacity: 0;}
   10% {opacity: 1;}
   90% {opacity: 1;}
-  100% {opacity: 0;}
+  100% {opacity: 0; transform: scale(0, 0); }
 }
 
-.errors{
+.errors {
 /*   position: fixed; */
 /*   z-index: 10000; */
   padding: 10px;
@@ -304,12 +302,12 @@ html > body > .navbar-default {
 /*   bottom: 0px; */
   pointer-events: none;
 }
+
 .alert {
-          animation: fadeOut 7500ms ease-in 0s 1 forwards;
-  -webkit-animation: fadeOut 7500ms ease-in 0s 1 forwards;
-     -moz-animation: fadeOut 7500ms ease-in 0s 1 forwards;
-/*   animation-fill-mode: forwards; */
-/*   -webkit-animation-fill-mode: forwards; */
+  /** @todo: Disable the animation until I figure out how to make it fade out without continuing to consume space in the DOM **/
+/*           animation: fadeOut 2700ms ease-in 0s 1 forwards; */
+/*   -webkit-animation: fadeOut 2700ms ease-in 0s 1 forwards; */
+/*      -moz-animation: fadeOut 2700ms ease-in 0s 1 forwards; */
   width: auto;
 /*   float: right; */
 /*   clear: both; */
