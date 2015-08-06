@@ -15,7 +15,7 @@ html > body {
   background: #fcfcfc; }
 
 .main, .sidebar {
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 .sidebar .widget {
