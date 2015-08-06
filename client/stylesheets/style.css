@@ -305,9 +305,9 @@ html > body > .navbar-default {
 
 .alert {
   /** @todo: Disable the animation until I figure out how to make it fade out without continuing to consume space in the DOM **/
-          animation: fadeOut 2700ms ease-in 0s 1 forwards;
-  -webkit-animation: fadeOut 2700ms ease-in 0s 1 forwards;
-     -moz-animation: fadeOut 2700ms ease-in 0s 1 forwards;
+          animation: fadeOut 5000ms ease-in 0s 1 forwards;
+  -webkit-animation: fadeOut 5000ms ease-in 0s 1 forwards;
+     -moz-animation: fadeOut 5000ms ease-in 0s 1 forwards;
   width: auto;
 /*   float: right; */
 /*   clear: both; */

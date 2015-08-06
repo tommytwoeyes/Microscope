@@ -19,5 +19,5 @@ Template.error.onRendered(function() {
   var error = this.data;
   Meteor.setTimeout(function() { // Remove the .alert message from the DOM 0.2ms after it fades out
     Errors.remove(error._id);
-  }, 5200);
+  }, 5100);
 });
