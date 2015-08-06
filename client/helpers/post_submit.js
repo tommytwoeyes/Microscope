@@ -14,7 +14,11 @@ Template.postCreate.helpers({
   },
   
   errorClass: function (field) {
-    return !!Session.get('postSubmitErrors')[field] ? 'has-error' : '';
+    if ( Session.get('postSubmitErrors')[field] ) {
+      return 'has-error';
+    }
+    
+    return '';
   }
 });
 
@@ -33,11 +37,9 @@ Template.postCreate.events({
       return Session.set('postSubmitErrors', errors);
     
     // Ensure URL begins with HTTP or Secure HTTP protocol
-    /*
     if ( ! urlHasProtocol(post.url)) {
       post.url = 'http://' + post.url;
-    }  
-    */
+    } 
     
     Meteor.call('postInsert', post, function(error, result) {
       // Display the error to the user and abort
