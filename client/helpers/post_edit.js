@@ -14,16 +14,6 @@ Template.postEdit.events({
     if ( ! urlHasProtocol(postAttributes.url)) {
       postAttributes.url = 'http://' + postAttributes.url;
     }
-    
-    // Check that the URL being submitted isn't already in our database
-    var duplicate = findDuplicateUrl(postAttributes.url);
-    
-    // If a Post with the submitted URL already exists, route the user
-    // to the previous post instead
-    if (duplicate.postExists) {
-      throwError('This link has already been posted.');
-      Router.go('postPage', {_id: duplicate._id});
-    }
 
     Posts.update(currentPostId, {$set: postAttributes}, function(error) {
       if (error) {
