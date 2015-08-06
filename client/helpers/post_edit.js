@@ -19,7 +19,7 @@ Template.postEdit.events({
       // If a Post with the submitted URL already exists, route the user
       // to the previous post instead
       if (result.postExists)
-        alert('This link has already been posted');
+        throwError('This link has already been posted.');
 
       Router.go('postPage', {_id: result._id});  
     });
@@ -27,7 +27,7 @@ Template.postEdit.events({
     Posts.update(currentPostId, {$set: postAttributes}, function(error) {
       if (error) {
         // Display error to user
-        alert(error.reason);
+        throwError(error.reason);
       } else {
         // Post updated successfully
         Router.go('postPage', {_id: currentPostId});
