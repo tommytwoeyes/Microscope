@@ -1,0 +1,18 @@
+<!-- Error list template -->
+<template name='meteorErrors'>
+  <div class='errors'>
+    {{#each errors}}
+      {{> meteorError}}
+    {{/each}}
+  </div>
+</template>
+
+<!-- Individual error template (uses Bootstrap's Alert component) -->
+<template name='meteorError'>
+  <div class='alert alert-warning alert-dismissible' role='alert'>
+    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+      <span aria-hidden='true'>&times;</span>
+    </button>
+    {{message}}
+  </div>
+</template>
