@@ -46,7 +46,7 @@ Template.postEdit.events({
     Posts.update(currentPostId, {$set: post}, function(error) {
       if (error) {
         // Display error to user
-        throwError(error.reason);
+        Errors.throw(error.reason);
       } else {
         // Post updated successfully
         Router.go('postPage', {_id: currentPostId});
