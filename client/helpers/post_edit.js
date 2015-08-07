@@ -11,7 +11,7 @@ Template.postEdit.events({
     };
     
     // Ensure URL has protocol (i.e. http:// or https://)
-    if ( ! urlHasProtocol(postAttributes.url)) {
+    if ( ! Validators.urlHasProtocol(postAttributes.url)) {
       postAttributes.url = 'http://' + postAttributes.url;
     }
 

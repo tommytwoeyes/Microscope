@@ -37,7 +37,7 @@ Template.postCreate.events({
       return Session.set('postSubmitErrors', errors);
     
     // Ensure URL begins with HTTP or Secure HTTP protocol
-    if ( ! urlHasProtocol(post.url)) {
+    if ( ! Validators.urlHasProtocol(post.url)) {
       post.url = 'http://' + post.url;
     } 
     
