@@ -36,7 +36,7 @@ Template.postEdit.events({
     
     var errors = Validators.validatePost(post);
     if ( errors.title || errors.url ) 
-      return Session.set('postSubmitErrors', errors);
+      return Session.set('postEditErrors', errors);
     
     // Ensure URL begins with HTTP or Secure HTTP protocol
     if ( ! Validators.urlHasProtocol(post.url)) {
