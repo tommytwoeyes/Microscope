@@ -10,10 +10,14 @@ Template.postEdit.events({
       url:      $(e.target).find('[name=url]').val()
     };
     
-    // Ensure URL has protocol (i.e. http:// or https://)
-    if ( ! Validators.urlHasProtocol(postAttributes.url)) {
-      postAttributes.url = 'http://' + postAttributes.url;
-    }
+    var errors = Validators.validatePost(post);
+    if ( errors.title || errors.url ) 
+      return Session.set('postSubmitErrors', errors);
+    
+    // Ensure URL begins with HTTP or Secure HTTP protocol
+    if ( ! Validators.urlHasProtocol(post.url)) {
+      post.url = 'http://' + post.url;
+    } 
 
     Posts.update(currentPostId, {$set: postAttributes}, function(error) {
       if (error) {

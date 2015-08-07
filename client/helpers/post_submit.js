@@ -32,7 +32,7 @@ Template.postCreate.events({
       url:      $(e.target).find('[name=url]').val()
     };
     
-    var errors = validatePost(post);
+    var errors = Validators.validatePost(post);
     if ( errors.title || errors.url ) 
       return Session.set('postSubmitErrors', errors);
     
