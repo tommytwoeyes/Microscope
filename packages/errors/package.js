@@ -24,5 +24,5 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use('thebionicman:errors', 'client');
   api.use(['tinytest', 'test-helpers'], 'client');
-  api.addFiles('errors-tests.js', 'client');
+  api.addFiles('errors_tests.js', 'client');
 });
