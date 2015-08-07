@@ -10,6 +10,7 @@ Package.describe({
   documentation: 'README.md'
 });
 
+// Tell Meteor how to use the Errors package's API
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.3');
   api.use(['minimongo', 'mongo-livedata', 'templating'], 'client');
@@ -19,8 +20,9 @@ Package.onUse(function(api) {
     api.export('Errors');
 });
 
+// Tell Meteor how to run the package tests
 Package.onTest(function(api) {
-  api.use('tinytest');
-  api.use('thebionicman:errors');
-  api.addFiles('errors-tests.js');
+  api.use('thebionicman:errors', 'client');
+  api.use(['tinytest', 'test-helpers'], 'client');
+  api.addFiles('errors-tests.js', 'client');
 });
