@@ -29,7 +29,7 @@ Template.postEdit.events({
 
     var currentPostId = this._id;
 
-    var postAttributes = {
+    var post = {
       title:    $(e.target).find('[name=title]').val(),
       url:      $(e.target).find('[name=url]').val()
     };
@@ -43,7 +43,7 @@ Template.postEdit.events({
       post.url = 'http://' + post.url;
     } 
 
-    Posts.update(currentPostId, {$set: postAttributes}, function(error) {
+    Posts.update(currentPostId, {$set: post}, function(error) {
       if (error) {
         // Display error to user
         throwError(error.reason);
