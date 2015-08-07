@@ -14,5 +14,5 @@ Template.meteorErrors.rendered = function() {
   // the rest of your content down (looks bad, BAD)
   Meteor.setTimeout(function() {
     Errors.collection.remove(error._id);
-  }, 3000);
+  }, 5050);
 };
