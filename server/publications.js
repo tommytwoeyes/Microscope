@@ -8,3 +8,7 @@ Meteor.publish('posts', function (searchString){
     }
   });
 });
+
+Meteor.publish('comments', function() {
+  return Comments.find();
+});
