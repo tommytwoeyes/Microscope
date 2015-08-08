@@ -1,6 +1,14 @@
 <template name='postPage'>
-<!-- Comment out this wrapper: it is interfering with its container's .clearfix -->
-<!--   <div class='page post-page'> -->
+  <div class='page-header'>
+    <h1>
+      Viewing post from
+      <small>{{domain}}</small>
+    </h1>
+  </div>
+  
+  <div class='post-page'>
     {{> postItem}}
-<!--   </div> -->
+  </div>
+  
+  {{> commentList}}
 </template>
