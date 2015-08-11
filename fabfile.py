@@ -4,7 +4,7 @@ from fabric.api import local
 
 project_dir = '/Users/tom/Projects/Meteor/Microscope'
 
-def commit_and_push_all(msg):
+def commit_pull_push_all(msg):
     local("cd " + project_dir)
     local('git commit -am "' + msg + '"')
     local('git pull github master')

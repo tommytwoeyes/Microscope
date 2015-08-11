@@ -16,7 +16,7 @@ Template.commentSubmit.helpers({
   }
 });
 
-Template.name.events({
+Template.commentSubmit.events({
   'submit form': function(e, template){
     e.preventDefault();
 
@@ -28,7 +28,7 @@ Template.name.events({
 
     var errors = {};
     if( ! comment.body ) {
-      errors.body = 'Please write a comment',
+      errors.body = 'Please write a comment';
       return Session.set('commentSubmitErrors', errors);
     }
 
