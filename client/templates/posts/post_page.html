@@ -5,10 +5,10 @@
       <small>{{domain}}</small>
     </h1>
   </div>
-  
+
   <div class='post-page'>
     {{> postItem}}
   </div>
-  
-  {{> commentList}}
+
+  {{> commentList postId=this._id}}
 </template>

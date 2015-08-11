@@ -75,7 +75,7 @@ footer {
   border: 1px solid #FFF;
 /*   border: 1px solid #FAC8A0; */
 /*   border: 1px solid #F7DEBA; */
-  background: none; 
+  background: none;
 }
 .post a.btn:hover {
   border: 1px solid rgba(240, 173, 78, 1.0);
@@ -87,7 +87,7 @@ footer {
 }
 
 .container a:hover {
-  color: #69D2E7; 
+  color: #69D2E7;
 }
 
 .main {
@@ -164,7 +164,7 @@ html > body > .navbar-default {
 }
 
 .navbar-right {
-  padding-top: 1rem; 
+  padding-top: 1rem;
 }
 
   /* line 32, ../sass/style.scss */
@@ -177,7 +177,7 @@ html > body > .navbar-default {
 .post {
   /* For modern browsers */
   margin-bottom: 2rem;
-  
+
   /* For IE 6/7 (trigger hasLayout) */
   *zoom: 1;
   position: relative;
@@ -233,7 +233,12 @@ html > body > .navbar-default {
 
 .comments {
   list-style-type: none;
-  margin: 0; }
+  margin: 0;
+  padding-left: 0; }
+  .comments > li {
+    margin-bottom: 1rem; }
+  .comments > li:last-child {
+    margin-bottom: 0; }
   .comments li h4 {
     font-size: 16px;
     margin: 0; }
@@ -335,7 +340,7 @@ html > body > .navbar-default {
 
 .form-group.login.submit .btn {
   border: 1px solid #F7DEBA;
-  background: #FFF; 
+  background: #FFF;
   color: #F0AD4E;
 }
 .form-group.login.submit .btn:hover {
