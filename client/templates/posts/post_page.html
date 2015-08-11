@@ -11,4 +11,10 @@
   </div>
 
   {{> commentList postId=this._id}}
+
+  {{#if currentUser}}
+    {{> commentSubmit}}
+  {{else}}
+    <p>Please login to leave a comment.</p>
+  {{/if}}
 </template>
