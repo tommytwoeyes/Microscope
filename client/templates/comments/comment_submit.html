@@ -1,0 +1,19 @@
+<template name='commentSubmit'>
+  <form name='comment' class='comment-form form form-horizontal'>
+    <div class='form-group {{errorClass "body"}}'>
+      <label class='control-label col-md-2' for='body'>Comment on this post</label>
+      <textarea name='body' id='body' class='form-control' rows='3'></textarea>
+      <span class='help-block'>{{errorMessage 'body'}}</span>
+    </div>
+
+    <div class='form-group'>
+      <div class='col-md-12'>
+        <div class='form-buttons pull-right'>
+          <button type='submit' class='edit btn btn-info btn-sm'>
+            <span class='glyphicon glyphicon-ok-sign' title='Save' aria-hidden='true'></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+</template>
