@@ -5,14 +5,30 @@ Template.postCreate.onCreated(function() {
   Session.set('postSubmitErrors', {});
 });
 
-// These helpers generate the reactive error messages and
-// error message CSS classes that (reactively) get added to
-// and removed from the form as the user interacts with it
 Template.postCreate.helpers({
+  /**
+   * Template helper
+   * Injects form validation error message into the post
+   * submit form
+   *
+   * @param   {Boolean} field The field to get error message for
+   * @returns {String} Error message
+   */
   errorMessage: function (field) {
     return Session.get('postSubmitErrors')[field];
   },
-  
+
+  /**
+   * Template helper
+   * Checks Session for post form errors
+   * and injects appropriate CSS class name in HTML tags.
+   *
+   * If the field has errors, it uses Bootstrap's [ .has-errors ] class
+   * If the field input is ok, it uses Bootstrap's [ .has-success ] class
+   *
+   * @param   {String} field The field name to check for errors
+   * @returns {String}   The error class to inject
+   */
   errorClass: function (field) {
     if ( Session.get('postSubmitErrors')[field] ) {
       return 'has-error';
