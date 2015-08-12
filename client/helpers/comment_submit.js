@@ -35,7 +35,7 @@ Template.commentSubmit.helpers({
       return 'has-warning';
     }
 
-    return '';
+    return 'has-success';
   }
 });
 
