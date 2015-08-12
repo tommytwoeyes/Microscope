@@ -32,10 +32,10 @@ Template.commentSubmit.helpers({
    */
   errorClass: function (field) {
     if ( Session.get('commentSubmitErrors')[field] ) {
-      return 'has-warning';
+      return 'has-error';
     }
 
-    return 'has-success';
+    return '';
   }
 });
 
