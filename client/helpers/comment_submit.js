@@ -7,9 +7,20 @@ Template.commentSubmit.helpers({
     return Session.get('commentSubmitErrors')[field];
   },
 
+  /**
+   * Template helper
+   * Checks Session for comment form errors
+   * and injects appropriate CSS class name in HTML tags.
+   *
+   * If the field has errors, it uses Bootstrap's [ .has-errors ] class
+   * If the field input is ok, it uses Bootstrap's [ .has-success ] class
+   *
+   * @param   {String} field The field name to check for errors
+   * @returns {String}   The error class to inject
+   */
   errorClass: function (field) {
     if ( Session.get('commentSubmitErrors')[field] ) {
-      return 'has-error';
+      return 'has-warning';
     }
 
     return '';
