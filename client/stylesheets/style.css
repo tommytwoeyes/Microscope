@@ -176,7 +176,7 @@ html > body > .navbar-default {
 
 .post {
   /* For modern browsers */
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 
   /* For IE 6/7 (trigger hasLayout) */
   *zoom: 1;
@@ -236,9 +236,7 @@ html > body > .navbar-default {
   margin: 0;
   padding-left: 0; }
   .comments > li {
-    margin-bottom: 1rem; }
-  .comments > li:last-child {
-    margin-bottom: 0; }
+    margin-bottom: 1.5rem; }
   .comments li h4 {
     font-size: 16px;
     margin: 0; }

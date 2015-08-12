@@ -1,4 +1,4 @@
-Template.commentSubmit.onCreated(function() {
+Template.commentSubmit.onCreated(function () {
   Session.set('commentSubmitErrors', {});
 });
 
