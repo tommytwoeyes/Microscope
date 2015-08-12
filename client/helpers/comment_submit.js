@@ -1,8 +1,20 @@
 Template.commentSubmit.onCreated(function () {
+	// Empty the comment form errors from the Session
+	// on initialization, to ensure the user doesn't
+	// see any stale error messages from a previous
+	// interaction with the form
   Session.set('commentSubmitErrors', {});
 });
 
 Template.commentSubmit.helpers({
+  /**
+   * Template helper
+   * Injects form validation error message into the comment
+   * submit form
+   *
+   * @param   {Boolean} field The field to get error message for
+   * @returns {String} Error message
+   */
   errorMessage: function(field) {
     return Session.get('commentSubmitErrors')[field];
   },
