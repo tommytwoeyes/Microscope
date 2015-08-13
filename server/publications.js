@@ -22,8 +22,9 @@ var filterByTitle = function filterByTitle(searchString) {
 	});
 };
 
-Meteor.publish('posts', filterByTitle(searchString));
+Meteor.publish('posts', filterByTitle);
 
-Meteor.publish('comments', function() {
-  return Comments.find();
+Meteor.publish('comments', function(postId) {
+	check(postId, String);
+  return Comments.find({postId: postId});
 });
