@@ -7,7 +7,9 @@
   </div>
 
   <div class='post-page'>
-    {{> postItem}}
+    <ul class='posts'>
+			{{> postItem}}
+		</ul>
   </div>
 
   {{> commentList postId=this._id}}
