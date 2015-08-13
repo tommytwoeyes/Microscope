@@ -36,7 +36,7 @@ if ( Posts.find().count() === 0 ) {
       userId: sacha._id,
       author: sacha.profile.name,
       submitted: new Date(now - 3 * 3600 * 1000), // 3 hours ago
-      body: 'Fuck you, Tom'
+      body: 'Get outta here, Tom'
     });
   
   // Second fake post
