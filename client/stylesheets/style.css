@@ -23,7 +23,9 @@ html > body {
 }
 
 .sidebar .widget .widget-body .btn-default:hover {
-	background-color: #fafafa;
+	color: rgba(240, 173, 78, 1.0);
+	border: 1px solid rgba(240, 173, 78, 1.0);
+	background-color: #fff;
 }
 
 .sidebar .widget > header {

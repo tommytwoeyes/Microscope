@@ -107,8 +107,8 @@
 @headings-font-family:    'Source Serif Pro';
 @headings-font-weight:    100;
 @headings-line-height:    1.5;
-@headings-color:          #0AD0F7;
-//@headings-color:          @gray-dark;
+@headings-color:          @gray-dark;
+//@headings-color:          #0AD0F7;
 
 // General
 // -------------------------
@@ -1083,6 +1083,8 @@ h5 > small, h6 > small {
   .post .post-actions {
     float: right; }
 	.post .post-actions > small > a {
+		color: #ccc; }
+	.post .post-actions > small:hover > a {
 		color: rgba(240, 173, 78, 1.0); }
   .post .post-actions > .discuss,
   .post .post-actions > .edit {
@@ -1100,9 +1102,10 @@ h5 > small, h6 > small {
 		background: none;
 	}
 	.post .post-actions .btn > .badge {
-		color: #aaa;
-		font-weight: 300;
-		background-color: #eee; }
+		background-color: transparent;
+		border: 1px solid #e7e7e7;
+		color: #5f5f5f;
+		font-weight: 300; }
 	.post a.btn:hover {
 		border: 1px solid rgba(240, 173, 78, 1.0);
 //		border: 1px solid rgba(240, 173, 78, 1.0);
@@ -1114,6 +1117,7 @@ h5 > small, h6 > small {
 	}
 	.post a.btn:hover > .badge {
 		color: rgba(255, 255, 255, 1.0);
+		border: 1px solid rgba(240, 173, 78, 1.0);
 		background-color: rgba(240, 173, 78, 1.0);
 	}
 
