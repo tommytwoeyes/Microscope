@@ -22,6 +22,10 @@ html > body {
   margin: 0 0 3rem 0;
 }
 
+.sidebar .widget .widget-body .btn-default:hover {
+	background-color: #fafafa;
+}
+
 .sidebar .widget > header {
   margin-bottom: 1rem;
   border-bottom: 1px solid #f3f3f3;
@@ -65,10 +69,6 @@ footer {
 }
 .btn.btn-danger:hover {
   color: #fff;
-}
-
-.container a:hover {
-  color: #69D2E7;
 }
 
 .main {

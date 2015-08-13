@@ -3,14 +3,18 @@
     <header class='post-content'>
       <h4><a target='_blank' href='{{url}}'>{{title}}</a><span>{{domain}}</span></h4>
       <small class='muted'>
-        submitted by {{author}},
-        <a href="{{pathFor route='postPage'}}">{{commentsCount}} comments</a>
+        submitted by {{author}}
       </small>
     </header>
 
     <div class='post-actions'>
+			<small>
+				<a href="{{pathFor route='postPage'}}" class='btn btn-sm'>comments</a>
+			</small>
+
       <a href="{{pathFor 'postPage'}}" class='discuss btn btn-default btn-sm'>
-        <span class='glyphicon glyphicon-comment' aria-hidden='true'></span>
+<!--        <span class='glyphicon glyphicon-comment' aria-hidden='true'></span>-->
+				<span class='badge'>{{commentsCount}}</span>
       </a>
 
     {{#if ownPost}}

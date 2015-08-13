@@ -1067,8 +1067,9 @@ h5 > small, h6 > small {
         margin-right: 5px;
 				font-weight: 300; }
 
-      .post .post-content h4:hover a {
-        color: #82E6FA;
+			.post .post-content h4:hover a,
+			.post .post-content h4 a:hover {
+        color: #f0ad4e;
         text-decoration: none;
       }
 
@@ -1081,6 +1082,8 @@ h5 > small, h6 > small {
       margin: 0; }
   .post .post-actions {
     float: right; }
+	.post .post-actions > small > a {
+		color: rgba(240, 173, 78, 1.0); }
   .post .post-actions > .discuss,
   .post .post-actions > .edit {
     display: block;
@@ -1096,13 +1099,22 @@ h5 > small, h6 > small {
 	/*   border: 1px solid #F7DEBA; */
 		background: none;
 	}
+	.post .post-actions .btn > .badge {
+		color: #aaa;
+		font-weight: 300;
+		background-color: #eee; }
 	.post a.btn:hover {
 		border: 1px solid rgba(240, 173, 78, 1.0);
+//		border: 1px solid rgba(240, 173, 78, 1.0);
 	/*   border: 1px solid #F0AD4E; */
 	/*   background: #F0AD4E; */
 	}
-	.post a.btn:hover > span.glyphicon {
-		color: #F38630;
+	.post a.btn:hover > .glyphicon {
+		color: rgba(240, 173, 78, 1.0);
+	}
+	.post a.btn:hover > .badge {
+		color: rgba(255, 255, 255, 1.0);
+		background-color: rgba(240, 173, 78, 1.0);
 	}
 
 // Comments
