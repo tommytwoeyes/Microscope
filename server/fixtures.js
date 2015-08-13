@@ -89,7 +89,8 @@ if ( Posts.find().count() === 0 ) {
     author: tom.profile.name,
     title: 'Discover Meteor : the Meteor Book',
     url: 'http://themeteorbook.com',
-    submitted: new Date(now - 12 * 3600 * 1000)
+    submitted: new Date(now - 12 * 3600 * 1000),
+		commentsCount: 0
   });
   
   
