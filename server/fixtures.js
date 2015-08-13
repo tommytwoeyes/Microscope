@@ -12,6 +12,23 @@ if ( Posts.find().count() === 0 ) {
     profile: {name: 'Sacha Greif'}
   });
   var sacha = Meteor.users.findOne(sachaId);
+
+	var ionicId = Posts.insert({
+		title: 'Ionic Framework: looks nice',
+		userId: tom._id,
+		author: tom.profile.name,
+		url: 'http://ionicframework.com',
+		submitted: new Date(now - 2 * 3600 * 1000),
+		commentsCount: 1
+	});
+
+		Comments.insert({
+			postId: ionicId,
+			userId: sacha._id,
+			author: sacha.profile.name,
+			submitted: new Date( now - 1.25 * 3600 * 1000),
+			body: 'Yeah, but does it work?'
+		})
   
   // First fake post
   var telescopeId = Posts.insert({
@@ -19,7 +36,8 @@ if ( Posts.find().count() === 0 ) {
     userId: sacha._id,
     author: sacha.profile.name,
     url: 'http://sachagreif.com/introducing-telescope',
-    submitted: new Date(now - 7 * 3600 * 1000) // 7 hours ago
+    submitted: new Date(now - 7 * 3600 * 1000), // 7 hours ago
+		commentsCount: 2
   });
   
   // First fake post's comments
@@ -46,6 +64,7 @@ if ( Posts.find().count() === 0 ) {
     author: tom.profile.name,
     url: 'http://meteor.com',
     submitted: new Date(now - 4 + 24 * 3600 * 1000), // ?
+		commentsCount: 2
   });
   
   // Second fake post's comments
