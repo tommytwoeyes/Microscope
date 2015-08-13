@@ -1,5 +1,11 @@
 {
   "public": {
 
-  }
+  },
+
+	// API config for Kadira.io Meteor Performance Monitoring
+	"kadira": {
+		"appId": "hYYh72BZqrmaCJcNo",
+		"appSecret": "6d92f4cc-fb5a-4864-91bb-c79697ce3543"
+	}
 }
