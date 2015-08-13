@@ -47,8 +47,9 @@
 @link-hover-decoration: underline;
 
 
-//== Typography
 //
+// Typography
+// --------------------------------------------------
 //## Font, line-height, and color for body text, headings, and more.
 
 @font-family-sans-serif:  'Source Sans Pro', Helvetica, Arial, sans-serif;
@@ -56,6 +57,7 @@
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   'Source Code Pro', Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
+@font-weight-base:				100;
 
 /**
  * Use em or rem font-size in Bootstrap 3
@@ -107,10 +109,13 @@
 @headings-line-height:    1.5;
 @headings-color:          @gray-dark;
 
-//
-// Typography
-// --------------------------------------------------
-
+// General
+// -------------------------
+body, div, p, ol, ul, li article, section,
+header, table, tr, th, td, caption, label,
+input, a {
+	font-weight: @font-weight-base;
+}
 
 // Headings
 // -------------------------
@@ -124,7 +129,7 @@ h1, h2, h3, h4, h5, h6,
 
   small,
   .small {
-    font-weight: normal;
+    font-weight: @font-weight-base;
     line-height: 1;
     color: @headings-small-color;
   }
