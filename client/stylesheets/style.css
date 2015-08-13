@@ -15,7 +15,7 @@ html > body {
   background: #fcfcfc; }
 
 .main, .sidebar {
-  padding-top: 2rem;
+  padding-top: 1.5rem;
 }
 
 .sidebar .widget {
@@ -193,16 +193,17 @@ html > body > .navbar-default {
       .post .post-content h4 a {
         color: #0AD0F7;
         display: inline-block;
-        margin-right: 5px; }
+        margin-right: 5px;
+				font-weight: 300; }
       .post .post-content h4:hover a {
         color: #82E6FA;
         text-decoration: none;
       }
       .post .post-content h4 span {
-        font-weight: normal;
+        font-weight: 100;
         font-size: 1rem;
         display: inline-block;
-        color: #ccc; }
+        color: #bbb; }
     .post .post-content p {
       margin: 0; }
   .post .post-actions {
@@ -303,7 +304,7 @@ ul.posts {
 .errors {
 /*   position: fixed; */
 /*   z-index: 10000; */
-  padding: 10px;
+  margin: 0;
 /*   top: 0px; */
 /*   left: 0px; */
 /*   right: 0px; */
@@ -311,7 +312,7 @@ ul.posts {
   pointer-events: none;
 }
 
-.alert {
+.errors > .alert {
   /** @todo: Disable the animation until I figure out how to make it fade out without continuing to consume space in the DOM **/
           animation: fadeOut 5000ms ease-in 0s 1 forwards;
   -webkit-animation: fadeOut 5000ms ease-in 0s 1 forwards;
@@ -319,7 +320,7 @@ ul.posts {
   width: auto;
 /*   float: right; */
 /*   clear: both; */
-  margin-bottom: 5px;
+  margin: 0 0 3rem 0;
   pointer-events: auto;
 }
 

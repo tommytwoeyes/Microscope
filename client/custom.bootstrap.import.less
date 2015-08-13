@@ -104,8 +104,63 @@
 //** By default, this inherits from the `<body>`.
 @headings-font-family:    'Source Serif Pro';
 @headings-font-weight:    100;
-@headings-line-height:    1.1;
+@headings-line-height:    1.5;
 @headings-color:          @gray-dark;
+
+//
+// Typography
+// --------------------------------------------------
+
+
+// Headings
+// -------------------------
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: @headings-font-family;
+  font-weight: @headings-font-weight;
+  line-height: @headings-line-height;
+  color: @headings-color;
+
+  small,
+  .small {
+    font-weight: normal;
+    line-height: 1;
+    color: @headings-small-color;
+  }
+}
+
+body h1, body .h1,
+body h2, body .h2,
+body h3, body .h3 {
+  margin-top: @line-height-computed;
+	margin-bottom: 0;
+//  margin-bottom: (@line-height-computed / 2);
+
+  small,
+  .small {
+    font-size: 65%;
+  }
+}
+body h4, body .h4,
+body h5, body .h5,
+body h6, body .h6 {
+  margin-top: (@line-height-computed / 2);
+	margin-bottom: 0;
+//  margin-bottom: (@line-height-computed / 2);
+
+  small,
+  .small {
+    font-size: 75%;
+  }
+}
+
+h1, .h1 { font-size: @font-size-h1; }
+h2, .h2 { font-size: @font-size-h2; }
+h3, .h3 { font-size: @font-size-h3; }
+h4, .h4 { font-size: @font-size-h4; }
+h5, .h5 { font-size: @font-size-h5; }
+h6, .h6 { font-size: @font-size-h6; }
 
 .lead {
   color: @gray-dark;
@@ -952,8 +1007,8 @@ nav.navbar-default .navbar-nav > li > a:hover {
 //** Horizontal line color.
 @hr-border:                   @gray-lighter;
 
-
-.post .post-content h4 span,
+.post > .post-content > h4,
+.post > .post-content > h4 > span,
 h1 > small {
   font-family: @font-family-sans-serif; }
 
