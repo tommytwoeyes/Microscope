@@ -107,7 +107,8 @@
 @headings-font-family:    'Source Serif Pro';
 @headings-font-weight:    100;
 @headings-line-height:    1.5;
-@headings-color:          @gray-dark;
+@headings-color:          #0AD0F7;
+//@headings-color:          @gray-dark;
 
 // General
 // -------------------------
@@ -1012,6 +1013,9 @@ nav.navbar-default .navbar-nav > li > a:hover {
 //** Horizontal line color.
 @hr-border:                   @gray-lighter;
 
+
+// Posts
+// -------------------------
 .post > .post-content > h4,
 .post > .post-content > h4 > span,
 h1 > small, h2 > small,
@@ -1019,7 +1023,117 @@ h3 > small, h4 > small,
 h5 > small, h6 > small {
   font-family: @font-family-sans-serif; }
 
+.post {
+  /* For modern browsers */
+  margin-bottom: 3rem;
+
+  /* For IE 6/7 (trigger hasLayout) */
+  *zoom: 1;
+  position: relative;
+  opacity: 1; }
+  .post:before, .post:after {
+    content: "";
+    display: table; }
+  .post:after {
+    clear: both; }
+  .post.invisible {
+    opacity: 0; }
+  .post.instant {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none; }
+  .post.animate{
+    -webkit-transition: all 300ms 0ms;
+    -moz-transition: all 300ms 0ms ease-in;
+    -o-transition: all 300ms 0ms ease-in;
+    transition: all 300ms 0ms ease-in; }
+  .post .upvote {
+    display: block;
+    margin: 7px 12px 0 0;
+    float: left; }
+  .post .post-content {
+    float: left; }
+
+    .post .post-content h4 {
+			color: @gray-darker;
+      margin: 0;
+      line-height: 1.4;
+      font-size: 1.75rem; }
+
+      .post .post-content h4 a {
+        color: @gray-darker;
+        display: inline-block;
+        margin-right: 5px;
+				font-weight: 300; }
+
+      .post .post-content h4:hover a {
+        color: #82E6FA;
+        text-decoration: none;
+      }
+
+      .post .post-content h4 span {
+        font-weight: 100;
+        font-size: 1rem;
+        display: inline-block;
+        color: #bbb; }
+    .post .post-content p {
+      margin: 0; }
+  .post .post-actions {
+    float: right; }
+  .post .post-actions > .discuss,
+  .post .post-actions > .edit {
+    display: block;
+    margin-top: 7px; }
+
+	.post a.btn > span.glyphicon {
+		color: rgba(0, 0, 0, 0.15);
+	/*   color: #F0AD4E; */
+	}
+	.post a.btn {
+		border: 1px solid transparent;
+	/*   border: 1px solid #FAC8A0; */
+	/*   border: 1px solid #F7DEBA; */
+		background: none;
+	}
+	.post a.btn:hover {
+		border: 1px solid rgba(240, 173, 78, 1.0);
+	/*   border: 1px solid #F0AD4E; */
+	/*   background: #F0AD4E; */
+	}
+	.post a.btn:hover > span.glyphicon {
+		color: #F38630;
+	}
+
+// Comments
+// -------------------------
+.comments > .comment > h4 {
+	color: @gray-darker;
+  font-family: @font-family-sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	margin: 0; }
+
+.comments-heading {
+	color: @gray; }
+.comments {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0; }
+  .comments > li {
+    margin-bottom: 1.5rem; }
+
+    .comments li h4 .date {
+      font-size: 0.74;
+      font-weight: 200; }
+    .comments li h4 a {
+      font-size: 12px; }
+  .comments li p:last-child {
+    margin-bottom: 0; }
+
+
 //** Convert Bootstrap 3 units from px values to rem values [ https://gist.github.com/jasny/9731895 ]
+// -------------------------
 pre {
   font-size: ( @font-size-base - (1 / @font-size-root) );
 }

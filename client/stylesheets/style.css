@@ -104,9 +104,10 @@ html > body > .navbar-default {
   background: #FFF;
 }
 
-.navbar-default .container.navigation-container .nav-pills a {
-  font-size: 0.75rem;
-  letter-spacing: 0.1rem;
+.navbar-default .container.navigation-container .navbar-nav a {
+  font-size: 0.85rem;
+	font-weight: 300;
+  letter-spacing: 0.15rem;
   text-transform: uppercase;
 }
 
@@ -145,7 +146,7 @@ html > body > .navbar-default {
 }
 
 .navbar-right {
-  padding-top: 1rem;
+  padding-top: 1.5rem;
 }
 
   /* line 32, ../sass/style.scss */
@@ -155,99 +156,6 @@ html > body > .navbar-default {
 #spinner {
   height: 300px; }
 
-.post {
-  /* For modern browsers */
-  margin-bottom: 3rem;
-
-  /* For IE 6/7 (trigger hasLayout) */
-  *zoom: 1;
-  position: relative;
-  opacity: 1; }
-  .post:before, .post:after {
-    content: "";
-    display: table; }
-  .post:after {
-    clear: both; }
-  .post.invisible {
-    opacity: 0; }
-  .post.instant {
-    -webkit-transition: none;
-    -moz-transition: none;
-    -o-transition: none;
-    transition: none; }
-  .post.animate{
-    -webkit-transition: all 300ms 0ms;
-    -moz-transition: all 300ms 0ms ease-in;
-    -o-transition: all 300ms 0ms ease-in;
-    transition: all 300ms 0ms ease-in; }
-  .post .upvote {
-    display: block;
-    margin: 7px 12px 0 0;
-    float: left; }
-  .post .post-content {
-    float: left; }
-    .post .post-content h4 {
-      margin: 0;
-      line-height: 1.4;
-      font-size: 1.75rem; }
-      .post .post-content h4 a {
-        color: #0AD0F7;
-        display: inline-block;
-        margin-right: 5px;
-				font-weight: 300; }
-      .post .post-content h4:hover a {
-        color: #82E6FA;
-        text-decoration: none;
-      }
-      .post .post-content h4 span {
-        font-weight: 100;
-        font-size: 1rem;
-        display: inline-block;
-        color: #bbb; }
-    .post .post-content p {
-      margin: 0; }
-  .post .post-actions {
-    float: right; }
-  .post .post-actions > .discuss,
-  .post .post-actions > .edit {
-    display: block;
-    margin-top: 7px; }
-
-	.post a.btn > span.glyphicon {
-		color: rgba(0, 0, 0, 0.15);
-	/*   color: #F0AD4E; */
-	}
-	.post a.btn {
-		border: 1px solid transparent;
-	/*   border: 1px solid #FAC8A0; */
-	/*   border: 1px solid #F7DEBA; */
-		background: none;
-	}
-	.post a.btn:hover {
-		border: 1px solid rgba(240, 173, 78, 1.0);
-	/*   border: 1px solid #F0AD4E; */
-	/*   background: #F0AD4E; */
-	}
-	.post a.btn:hover > span.glyphicon {
-		color: #F38630;
-	}
-
-.comments {
-  list-style-type: none;
-  margin: 0;
-  padding-left: 0; }
-  .comments > li {
-    margin-bottom: 1.5rem; }
-  .comments li h4 {
-    font-size: 16px;
-    margin: 0; }
-    .comments li h4 .date {
-      font-size: 12px;
-      font-weight: normal; }
-    .comments li h4 a {
-      font-size: 12px; }
-  .comments li p:last-child {
-    margin-bottom: 0; }
 
 .dropdown-menu span {
   display: block;
