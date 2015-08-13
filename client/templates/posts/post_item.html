@@ -1,7 +1,7 @@
 <template name='postItem'>
-  <article class='post'>
+  <li class='post'>
     <header class='post-content'>
-      <h3><a target='_blank' href='{{url}}'>{{title}}</a><span>{{domain}}</span></h3>
+      <h4><a target='_blank' href='{{url}}'>{{title}}</a><span>{{domain}}</span></h4>
       <small class='muted'>
         submitted by {{author}},
         <a href='{{pathFor route='postPage'}}'>{{commentsCount}} comments</a>
@@ -19,5 +19,5 @@
       </a>
     {{/if}}
     </div>
-  </article>
+  </li>
 </template>
