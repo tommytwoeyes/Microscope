@@ -14,7 +14,11 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.3');
   api.use(['minimongo', 'mongo-livedata', 'templating'], 'client');
-  api.addFiles(['errors.js', 'errors_list.html', 'errors_list.js'], 'client');
+  api.addFiles([
+		'./client/collections/errors.js',
+		'./client/templates/errors_list.html',
+		'./client/helpers/errors_list.js'
+	], 'client');
   
   if (api.export)
     api.export('Errors');
@@ -24,5 +28,5 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use('thebionicman:errors', 'client');
   api.use(['tinytest', 'test-helpers'], 'client');
-  api.addFiles('errors_tests.js', 'client');
+  api.addFiles('./tests/errors_tests.js', 'client');
 });
