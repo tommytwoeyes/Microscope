@@ -4,8 +4,3 @@
 Template.registerHelper('currentRoute', function() {
   return Router.current().route.getName();
 });
-
-Template.registerHelper('urlHasProtocol', function(url) {
-  var re = /^https?:\/\//i;
-  return re.test(url);
-});
