@@ -8,20 +8,20 @@
       {{#if currentUser}}
         {{> userMeta}}
       {{/if}}
-        
+
       {{#if currentUser}}
         {{> postButton}}
       {{/if}}
       </aside>
-      
+
       <!-- Primary content -->
-      <section class='main col-xs-12 col-md-8 col-md-pull-4 clearfix'>
+      <main class='main col-xs-12 col-md-8 col-md-pull-4 clearfix'>
         {{> meteorErrors}}
-        
+
         {{> yield}}
-      </section>
+      </main>
     </div>
   </section>
-  
+
   {{> footer}}
 </template>
