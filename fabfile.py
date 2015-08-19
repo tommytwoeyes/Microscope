@@ -12,7 +12,7 @@ Git workflow for me in this project.
 from fabric.api import *
 
 # Project configuration
-project_dir							= '/Users/tom/Projects/Meteor/Microscope'
+project_dir							= '/Users/tom/Projects/JavaScript/Meteor/Microscope'
 git_remote_bitbucket 		= 'bitbucket'
 git_remote_github 			= 'github'
 git_remote_combined 		= 'all'
@@ -33,7 +33,7 @@ def commit_pull_push(msg, branch='master'):
 	commit_cmd = """git commit -am '{0}'""".format(msg)
 	pull_cmd_first = "git pull {0} {1}".format(git_remote_github, branch)
 	pull_cmd_second = "git pull {0} {1}".format(git_remote_bitbucket, branch)
-	push_cmd = "git push {0} {1}".format(git_remote, branch)
+	push_cmd = "git push {0} {1}".format(git_remote_combined, branch)
 
 	local( "cd {0}".format(project_dir) )
 	local( commit_cmd )
