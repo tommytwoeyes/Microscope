@@ -19,8 +19,9 @@
         <ul class='nav navbar-nav navbar-right'>
           {{> loginButtons align="right"}}
           {{#if currentUser}}<li><a href="{{pathFor 'postCreate'}}">New post</a></li>{{/if}}
-          <li><a href="{{pathFor 'postsList'}}">Home</a></li>
+					<li class='dropdown'>{{> notifications}}</li>
           <li><a href="{{pathFor 'about'}}">About</a></li>
+          <li><a href="{{pathFor 'postsList'}}">Home</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container -->
