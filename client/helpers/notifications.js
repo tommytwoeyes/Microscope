@@ -21,7 +21,6 @@ Template.notificationItem.helpers({
 
 Template.notificationItem.events({
 	'click .notification-item a': function(e) {
-		e.preventDefault();
 		console.log('Setting the read flag on the Notification object with _id: ' + this._id);
 		Notifications.update(this._id, {
 			$set: {read: true}
