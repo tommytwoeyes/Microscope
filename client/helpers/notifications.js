@@ -18,3 +18,11 @@ Template.notificationItem.helpers({
 		return Router.routes.postPagge.path({_id: this.postId});
 	}
 });
+
+Template.notificationItem.events({
+	'click a': function() {
+		Notifications.update(this._id, {
+			$set: {read: true}
+		});
+	}
+});
