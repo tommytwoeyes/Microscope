@@ -12,3 +12,9 @@ Template.notifications.helpers({
 		}
 	}
 });
+
+Template.notificationItem.helpers({
+	notificationPostPath: function() {
+		return Router.routes.postPagge.path({_id: this.postId});
+	}
+});
