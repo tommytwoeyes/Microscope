@@ -189,6 +189,11 @@ ul.posts {
   height: 100px;
 }
 
+/** Notifications **/
+.navbar-default .container.navigation-container .navbar-nav .notification-item a {
+	text-transform: none;
+}
+
 .jumbotron{
   text-align: center;
 }

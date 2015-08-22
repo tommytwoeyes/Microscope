@@ -1,8 +1,12 @@
 <template name='notifications'>
 	<a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>
 		Notifications
-		<span class='badge'>{{notifications.count}}</span>
+		{{#if notifications.count}}
+		<span class='badge'>
+			{{notifications.count}}
+		</span>
 		<span class='caret'></span>
+		{{/if}}
 	</a>
 	<ul class='notification dropdown-menu'>
 		{{#if notifications.count}}
@@ -16,8 +20,8 @@
 </template>
 
 <template name='notificationItem'>
-	<li>
-		<a href='{{notificationPostPath}}'>
+	<li class='notification-item'>
+		<a href="{{notificationPostPath}}">
 			<strong>{{commenterName}}</strong> commented on your post
 		</a>
 	</li>

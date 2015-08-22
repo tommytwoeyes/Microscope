@@ -7,7 +7,7 @@ Template.notifications.helpers({
 		var notificationCount = notificationList.count();
 		
 		return {
-			count: notificationCount,
+			count: (notificationCount < 0) ? null : notificationCount,
 			list: notificationList
 		}
 	}
@@ -15,12 +15,14 @@ Template.notifications.helpers({
 
 Template.notificationItem.helpers({
 	notificationPostPath: function() {
-		return Router.routes.postPagge.path({_id: this.postId});
+		return Router.routes.postPage.path({_id: this.postId});
 	}
 });
 
 Template.notificationItem.events({
-	'click a': function() {
+	'click .notification-item a': function(e) {
+		e.preventDefault();
+		console.log('Setting the read flag on the Notification object with _id: ' + this._id);
 		Notifications.update(this._id, {
 			$set: {read: true}
 		});
